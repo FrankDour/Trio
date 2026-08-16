@@ -200,8 +200,8 @@ jobs:
     steps:
       - name: Select Xcode version
         run: sudo xcode-select --switch /Applications/Xcode_26.2.app/Contents/Developer
-  xcode-select -p
-  xcodebuild -version
+        xcode-select -p
+        xcodebuild -version
       
       - name: Checkout Repo for building
         uses: actions/checkout@v5
