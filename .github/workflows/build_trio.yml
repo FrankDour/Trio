@@ -14,7 +14,7 @@ env:
   TARGET_BRANCH: ${{ github.ref_name }} # target branch on fork to be kept in sync
 
 jobs:
-    # use a single runner for these sequential steps
+  # use a single runner for these sequential steps
   check_status:
     runs-on: ubuntu-latest
     name: Check status to decide whether to build
